@@ -28,7 +28,7 @@ Once deployed, my portfolio will be available here:
 ---
 
 ##  Contact
-- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/deepak-negi-633971371/)  
+- **LinkedIn:** [Your LinkedIn Profile](www.linkedin.com/in/deepak-singh-negi-633971371)  
 - **Email:** [your-email@example.com](mailto:deepaknegi16360@gmail.com)  
 - **GitHub:** [Deepak-SinghNegi](https://github.com/deepak-SinghNegi)  
 
