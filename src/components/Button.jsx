@@ -1,13 +1,19 @@
 import React from 'react'
 
-const Button = ({ buttons}) => {
+const Button = ({ buttons, showIcons = false }) => {
   return (
-    <div className='md:flex md:gap-20  md:h-10 md:w-full md:justify-center md:items-center hidden md: mr-20 mt-10 '>
-        {buttons.map((btn,index) =>{
-        return(    <button 
-        key={index}
-        className={` ${btn.className}`}> {btn.label}</button>);
-        })}
+    <div className="flex items-center space-x-6">
+      {buttons.map((btn, index) => (
+        <button
+          key={index}
+          className={`flex items-center flex-col gap-2 cursor-pointer ${btn.className}`}
+        >
+          {showIcons && btn.icon && (
+            <img src={btn.icon} alt={btn.label} className="h-35 w-35" />
+          )}
+          <span className="text-white">{btn.label}</span>
+        </button>
+      ))}
     </div>
   );
 };
