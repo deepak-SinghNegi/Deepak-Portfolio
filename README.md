@@ -1,12 +1,37 @@
-# React + Vite
+#  Deepak’s Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my **personal portfolio website** built with **React + Vite**.  
+It showcases my projects, technical skills, and achievements as a Computer Science student aspiring to become a **Software Developer**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Tech Stack
+- **Frontend:** React, Vite  
+- **Styling:** CSS / Tailwind (if applicable)  
+- **Build Tool:** Vite  
+- **Version Control:** Git & GitHub  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+##  Features
+- **Home Page** – brief introduction about me  
+- **Projects Section** – showcase of my work & GitHub repositories  
+- **Skills Section** – highlights of my tech stack  
+- **Contact Section** – links to connect with me  
+
+---
+
+##  Live Demo
+Once deployed, my portfolio will be available here:  
+[Deepak’s Portfolio](https://deepak-singhnegi.github.io/Deepak-Portfolio)  
+
+---
+
+##  Contact
+- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/deepak-negi-633971371/)  
+- **Email:** [your-email@example.com](mailto:deepaknegi16360@gmail.com)  
+- **GitHub:** [Deepak-SinghNegi](https://github.com/deepak-SinghNegi)  
+
+---
+
+✨ *This portfolio will be continuously updated with new projects and skills as I grow in my software development journey.*
