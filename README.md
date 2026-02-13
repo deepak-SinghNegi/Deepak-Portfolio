@@ -7,7 +7,8 @@ This project showcases my skills, projects, and experience as a Computer Science
 
 ## 🌐 Live Demo
 
-🔗 [View Portfolio](https://your-portfolio-link.com)
+🚧 Deployment coming soon...
+
 
 ---
 
