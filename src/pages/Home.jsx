@@ -3,10 +3,12 @@ import linkedInImg from '../assets/linkedin.png'
 import gitIcon from '../assets/social.png'
 import leetCodeIcon from '../assets/leetCode.png'
 
+
 const Home = () => {
   return (
     <div >
-      <div className='text-center'>
+      
+      <div className='text-center '>
         <div><strong className='font-bold   md:text-8xl text-5xl bg-linear-to-r 
                from-purple-400 
                via-pink-500 
@@ -28,10 +30,11 @@ const Home = () => {
       <div className="mt-20 max-w-6xl mx-auto px-6">
   <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
+
     <a href="https://www.linkedin.com/in/deepak-singh-negi-633971371/" 
        className="bg-white hover:bg-sky-200 backdrop-blur-md p-8 rounded-2xl 
                   hover:scale-105 transition duration-300 
-                  text-center flex flex-col items-center">
+                  text-center flex flex-col items-center ">
 
       <img src={linkedInImg} 
            alt="LinkedIn"
