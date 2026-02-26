@@ -28,7 +28,7 @@ const Home = () => {
 
       </div>
       <div className="mt-20 max-w-6xl mx-auto px-6">
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+  <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
 
 
     <a href="https://www.linkedin.com/in/deepak-singh-negi-633971371/" 
