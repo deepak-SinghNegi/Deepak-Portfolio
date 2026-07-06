@@ -16,23 +16,23 @@ const App = () => {
         className="pt-32 px-4 md:px-10 bg-gradient-to-br 
         from-[#141e30] via-[#243b55] to-[#000000]"
       >
-        <section id="home" className="scroll-mt-32">
+        <section id="home">
           <Home />
         </section>
 
-        <section id="about" className="scroll-mt-32 mt-24">
+        <section id="about">
           <About />
         </section>
 
-        <section id="resume" className="scroll-mt-32 mt-24">
+        <section id="resume">
           <Resume />
         </section>
 
-        <section id="projects" className="scroll-mt-32 mt-24">
+        <section id="projects" >
           <Projects />
         </section>
 
-        <section id="contact" className="scroll-mt-32 mt-24 pb-24">
+        <section id="contact">
           <Contact />
         </section>
       </div>

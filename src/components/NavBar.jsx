@@ -1,68 +1,92 @@
 import React, { useState } from "react";
-import manuIcon from "../assets/manu.svg";
+import menuIcon from "../assets/manu.svg";
 import closeIcon from "../assets/close.svg";
 
 const NavBar = () => {
-  const [manu, setManu] = useState(false);
+  const [menu, setMenu] = useState(false);
 
-  const handleClick = () => setManu((prev) => !prev);
+  const toggleMenu = () => setMenu((prev) => !prev);
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-20 p-10 lg:flex lg:items-center md:justify-center">
-      <div className="fixed right-10 top-8 lg:hidden">
-        {manu && <DropBox setManu={setManu} />}
-        <img
-          className="fixed top-6 right-6 z-[200] lg:hidden h-10"
-          onClick={handleClick}
-          src={!manu ? manuIcon : closeIcon}
-          alt=""
-        />
-      </div>
+    <>
+      <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50">
 
-      <div className="bg-white/10 p-3 rounded-full hidden z-50 text-white lg:flex gap-12">
-        <a className="text-center p-2 hover:bg-white/20 rounded-full" href="#home">
-          Home
-        </a>
-        <a className="text-center p-2 hover:bg-white/20 rounded-full" href="#about">
-          About me
-        </a>
-        <a className="text-center p-2 hover:bg-white/20 rounded-full" href="#resume">
-          Resume
-        </a>
-        <a className="text-center p-2 hover:bg-white/20 rounded-full" href="#projects">
-          Projects
-        </a>
-      </div>
+        {/* Desktop Navbar */}
+        <div
+          className="
+            hidden lg:flex
+            items-center gap-3
+            px-4 py-3
+            rounded-full
+            bg-white/10
+            backdrop-blur-lg
+            border border-white/10
+            shadow-xl
+            text-white
+          "
+        >
+          <NavItem href="#home">Home</NavItem>
+          <NavItem href="#about">About</NavItem>
+          <NavItem href="#resume">Resume</NavItem>
+          <NavItem href="#projects">Projects</NavItem>
+          <NavItem href="#contact">Contact</NavItem>
+        </div>
 
-      <div className="hidden lg:flex text-white bg-white/10 p-3 rounded-full absolute right-5">
-        <a className="text-center p-2 hover:bg-white/20 rounded-full" href="#contact">
-          Contact me
-        </a>
-      </div>
-    </nav>
+        {/* Mobile Button */}
+        <button
+          onClick={toggleMenu}
+          className="lg:hidden fixed top-6 right-6 z-[300]"
+        >
+          <img
+            src={menu ? closeIcon : menuIcon}
+            className="h-10"
+            alt="menu"
+          />
+        </button>
+
+        {menu && <MobileMenu closeMenu={() => setMenu(false)} />}
+      </nav>
+    </>
   );
 };
 
-const DropBox = ({ setManu }) => {
-  const removeDropBox = () => setManu(false);
+const NavItem = ({ href, children }) => (
+  <a
+    href={href}
+    className="
+      px-5 py-2
+      rounded-full
+      transition-all
+      duration-300
+      hover:bg-white/20
+      hover:scale-105
+    "
+  >
+    {children}
+  </a>
+);
 
+const MobileMenu = ({ closeMenu }) => {
   return (
-    <div className="text-4xl fixed inset-0 z-[200] text-white flex flex-col items-center justify-center gap-10 lg:hidden bg-white/85">
-      <a onClick={removeDropBox} className="text-black p-2" href="#home">
-        Home
-      </a>
-      <a onClick={removeDropBox} className="text-black p-2" href="#about">
-        About me
-      </a>
-      <a onClick={removeDropBox} className="text-black p-2" href="#resume">
-        Resume
-      </a>
-      <a onClick={removeDropBox} className="text-black p-2" href="#projects">
-        Projects
-      </a>
-      <a onClick={removeDropBox} className="text-black p-2" href="#contact">
-        Contact me
-      </a>
+    <div
+      className="
+        fixed inset-0
+        bg-slate-950/95
+        backdrop-blur-xl
+        flex flex-col
+        justify-center
+        items-center
+        gap-8
+        text-white
+        text-3xl
+        z-[250]
+      "
+    >
+      <a onClick={closeMenu} href="#home">Home</a>
+      <a onClick={closeMenu} href="#about">About</a>
+      <a onClick={closeMenu} href="#resume">Resume</a>
+      <a onClick={closeMenu} href="#projects">Projects</a>
+      <a onClick={closeMenu} href="#contact">Contact</a>
     </div>
   );
 };
